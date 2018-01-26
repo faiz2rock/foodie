@@ -15,7 +15,7 @@ console.log("\n\n Dist path is "+DIST_DIR);*/
 /*console.log("\n\nMain path is "+appDir);
 app.use(express.static(__dirname, '/assets'));*/
 
-app.use('/css', express.static(__dirname + '/assets/homepage/'));
+app.use('/css', express.static(__dirname + '/src/assets/homepage/css'));
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/src/index.html'));
