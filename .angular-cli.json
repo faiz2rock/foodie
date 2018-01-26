@@ -1,0 +1,96 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project":
+    {
+        "name": "bookstore"
+    },
+    "apps": [
+    {
+        "root": "src",
+        "outDir": "dist",
+        "assets": [
+            "assets/homepage",
+            "favicon.ico"
+        ],
+        "index": "index.html",
+        "main": "main.ts",
+        "polyfills": "polyfills.ts",
+        "test": "test.ts",
+        "tsconfig": "tsconfig.app.json",
+        "testTsconfig": "tsconfig.spec.json",
+        "prefix": "app",
+        "styles": [
+            "styles.css",
+            "../src/assets/homepage/css/style.css",
+            "../src/assets/homepage/css/bootstrap.css",
+            "../src/assets/homepage/css/themetypo.css",
+            "../src/assets/homepage/css/color.css",
+            "../src/assets/homepage/css/font-awesome.min.css",
+            "../src/assets/homepage/css/jquery.bxslider.css",
+            "../src/assets/homepage/css/bootstrap-slider.css",
+            "../src/assets/homepage/css/widget.css",
+            "../src/assets/homepage/css/responsive.css",
+            "../src/assets/homepage/js/dl-menu/component.css"
+        ],
+        "scripts": [
+            "../src/assets/homepage/js/jquery.min.js",
+            "../src/assets/homepage/js/bootstrap.min.js",
+            "../src/assets/homepage/js/jquery.bxslider.min.js",
+            "../src/assets/homepage/js/bootstrap-slider.js",
+            "../src/assets/homepage/js/waypoints.min.js",
+            "../src/assets/homepage/js/jquery.counterup.min.js",
+            "../src/assets/homepage/js/dl-menu/modernizr.custom.js",
+            "../src/assets/homepage/js/dl-menu/jquery.dlmenu.js",
+            "../src/assets/homepage/js/classie.js",
+
+            "../src/assets/homepage/js/functions.js"
+        ],
+        "fonts": [
+            "../src/assets/homepage/fonts/glyphicons-halflings-regular.eot",
+            "../src/assets/homepage/fonts/glyphicons-halflings-regular.svg",
+            "../src/assets/homepage/fonts/glyphicons-halflings-regular.ttf",
+            "../src/assets/homepage/fonts/glyphicons-halflings-regular.woff"
+        ],
+        "environmentSource": "environments/environment.ts",
+        "environments":
+        {
+            "dev": "environments/environment.ts",
+            "prod": "environments/environment.prod.ts"
+        }
+    }],
+    "e2e":
+    {
+        "protractor":
+        {
+            "config": "./protractor.conf.js"
+        }
+    },
+    "lint": [
+    {
+        "project": "src/tsconfig.app.json",
+        "exclude": "**/node_modules/**"
+    },
+    {
+        "project": "src/tsconfig.spec.json",
+        "exclude": "**/node_modules/**"
+    },
+    {
+        "project": "e2e/tsconfig.e2e.json",
+        "exclude": "**/node_modules/**"
+    }],
+    "test":
+    {
+        "karma":
+        {
+            "config": "./karma.conf.js"
+        }
+    },
+    "defaults":
+    {
+        "styleExt": "scss",
+        "component":
+        {
+
+        }
+    }
+}
